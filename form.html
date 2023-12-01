@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Place Order</h1>
+    </header>
+
+    <section id="form-content">
+        <h2>Contact Information</h2>
+        <form action="thankyou.html" method="post" onsubmit="setCustomerNameAndRedirect(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Gender:</label>
+            <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+
+            <label><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Delivery</label>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Order Form. All rights reserved.
+    </footer>
+</body>
+
+</html>
